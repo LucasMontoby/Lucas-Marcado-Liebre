@@ -1,0 +1,357 @@
+/* Estilos Generales */
+
+*{font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+  box-sizing: border-box;}
+  
+  body{
+      background-color: #eaeaea;
+  }
+  
+  /* Estilos de header  */
+  
+  .top-header {
+      background-color: #eac926;
+      padding: 15px;
+  }
+  .ingresodato{
+      width:150px;
+      height: 30px;
+      
+  }
+  header .logoybarra {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  header .logo {
+      width: 40vw;
+  }
+  header h2 {
+      text-align: center;
+      padding: 15px;
+      margin-top:auto;
+      margin-bottom:auto;
+  }
+  header h2 div {
+      font-size: 12px;
+  }
+  header .form .input {
+      background-color: white;
+      color: #666;
+      outline: none;
+      width: 40vw;
+      font-size: 8px;
+      padding: 7px;
+      height: 20px;
+      margin: 5px;
+      overflow: hidden;
+      margin-top:auto;
+      margin-bottom: auto;
+  }
+  header .form {
+      margin-top:auto;
+      margin-bottom: auto;
+      margin-left: 5px;
+  }
+  header .compraencuotas{
+      width: 100%;
+  }
+  header .menu {
+      padding: 15px
+  }
+  header  {
+      padding:10px;
+  }
+  header nav {
+      font-size: 12px;
+      display:none;
+  }
+  header .menu_tienda {
+      display:flex;
+      width: 50%;
+      justify-content:left;
+  }
+  header .items_menu_tienda{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  header .menu_usuario {
+      display:flex;
+      width: 50%;
+      justify-content: right;
+  }
+  
+  header .hamburguer-button{
+      display:flex;
+      justify-content: center;
+      margin: 15px;
+  }
+  
+  header .hamburguer-button i{
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #0044AA;
+      box-sizing: border-box;
+      color: white;
+      font-size: 20px;
+      
+  }
+  
+  
+  
+  /* Estilos de cuerpo principal  */
+  
+  main{
+      width: 90%;
+      margin: 0 auto;
+  }
+  
+  .logobanner{
+      width: 100%
+  }
+  
+  h3{
+      font-size: 24px;
+      margin: 10px;
+  }
+  h4{
+      padding: 15px;
+  
+  }
+  main img {
+      width: 90%
+  }
+  
+  main article .main-article {
+      padding: 10px;
+      border-top: 1px solid #eaeaea;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  main section article {
+      background-color: #fff;
+      margin-bottom: 10px;    
+  }
+  main section article img {
+      margin: 15px;
+  }
+  
+  main section .listado {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  
+  main section article i{
+      display: block;
+      font-size: 16px;
+      color: #39b54a;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #39b54a;
+      background-color: #FFF;
+      border-radius: 50%;
+      right: 30px;
+      top : 10 px;
+  }
+  
+  .descuento{
+      font-size: 16px;
+      color: #39b54a;
+      flex-grow: 0.7;
+  }
+  
+  .precio{
+      font-size: 18px;
+      flex-grow: 0.3;
+      padding-left:10px;
+  }
+  
+  .descripcion{
+      font-size: 16px;
+      display:none;
+      width: 100%;
+  }
+  
+  /* Estilos de footer */
+  
+  footer {
+      padding: 15px;
+  }
+  footer section {
+      padding: 15px;
+      text-align: center;
+  }
+  footer section div {
+      text-align: center;
+      padding: 10px
+  }
+  footer section div i {
+      color: blue;
+  }
+  
+  
+  /* Adaptabilidad para tablet y compu */
+  
+  /* Tablet */
+  @media (min-width: 361px){
+  
+  .descripcion {display:block}
+  
+  main section article {
+      box-shadow : 0px 0px 10px black;
+  }
+  header nav{
+      display:block;
+      display:flex;
+      font-size: 8px;
+  }
+  header .hamburguer-button{
+      display:none;
+  }
+  main section article {
+      width: 40%;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top:20px;   
+  }
+  header .items_menu_tienda{
+      margin-left: 5px;
+      margin-right: 3px;
+  }
+  header .logo {
+      width: 30vw;
+  }
+  
+  header .logoybarra {
+      display:flex;
+      flex-wrap: unset;
+      justify-content:left;
+      
+  }
+  header .form .input{
+      width: 30vw;
+      font-size: 8px;
+  }
+  header .compraencuotas {
+      width: 25vw;
+      font-size: 8px;
+  }
+  }
+  
+  @media (min-width: 510px){
+      header nav {margin-top: 10px;}
+  }
+  
+  
+  /* Compu */
+  
+  @media (min-width: 769px){
+  
+      main section article {
+          width: 22%;
+          margin-left: 10px;
+          margin-right: 10px; 
+          margin-top:20px;  
+      }
+      header .form .input{
+          width: 30vw;
+          font-size: 12px;
+      }
+      header .compraencuotas {
+          width: 30vw;
+          font-size: 12px;
+      }
+      header .items_menu_tienda{
+          font-size: 12px;
+      }
+      footer {
+          margin-top: 50px;
+     }
+      footer .cajasfooter {
+          display:flex;
+          justify-content: space-evenly;
+      }      
+      
+      
+  }
+  
+  /* Registro */
+  
+  .logoregister {
+      width: 150px;
+  }
+  
+  .top-header-register {
+      background-color: #e7d26b;
+      padding: 15px;
+      height: 90px;
+  }
+  
+  body .listadoregistro {
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      margin: 0 auto;
+      border: solid #101215;
+      font-size: 12px;
+      width: 50%;
+      background-color:rgb(234, 246, 167);
+      border-radius: 25px;
+  }
+  
+  .titulo{
+      text-align: center;
+      width: 100%;
+  }
+  
+  
+  body .listadologin {
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 40px;;
+  }
+  
+  body div {
+      padding:5px;
+  }
+  
+  body .camposformulario {
+      padding: 5px;
+      margin: 0 auto;
+      border:#666
+  }
+  
+  .cajacelesteregistro{
+      height: 30%;
+      background-color: rgb(12, 9, 9);
+      color: #0044AA;
+      padding: 2%;
+      margin-top: 2%;
+      border: rgb(41, 39, 39);
+  }
+  
+  body .tituloregistro{
+      margin-left:auto;
+      margin-right:auto;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      width: 50%;
+  }
+  header .logoycomprar {
+      display:flex;
+      justify-content: space-between;
+  }
+  
+  .ingresodato{
+      margin-bottom: 3%;
+  }
+  
+  .fotodeusuario{
+      border-collapse: collapse;
+  }
