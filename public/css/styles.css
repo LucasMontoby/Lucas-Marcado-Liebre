@@ -1,9 +1,4 @@
 /* Estilos Generales */
-
-*{font-family: 'Roboto', sans-serif;
-    padding: 0px;
-    margin: 0px;
-  box-sizing: border-box;}
   
   body{
       background-color: #eaeaea;
@@ -15,28 +10,39 @@
       background-color: #eac926;
       padding: 15px;
   }
+
+  .div-input{
+      margin-right: 5px;
+      }
+
   .ingresodato{
       width:150px;
       height: 30px;
       
   }
+  
   header .logoybarra {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    text-align:justify;
   }
+ 
   header .logo {
-      width: 40vw;
+      width: 20vw;
   }
+
   header h2 {
       text-align: center;
       padding: 15px;
       margin-top:auto;
       margin-bottom:auto;
   }
+
   header h2 div {
       font-size: 12px;
   }
+
   header .form .input {
       background-color: white;
       color: #666;
@@ -50,29 +56,36 @@
       margin-top:auto;
       margin-bottom: auto;
   }
+
   header .form {
       margin-top:auto;
       margin-bottom: auto;
-      margin-left: 5px;
+      margin-left: 10px;
   }
+
   header .compraencuotas{
       width: 100%;
   }
+
   header .menu {
       padding: 15px
   }
+
   header  {
       padding:10px;
   }
+
   header nav {
       font-size: 12px;
       display:none;
   }
+
   header .menu_tienda {
       display:flex;
       width: 50%;
       justify-content:left;
   }
+
   header .items_menu_tienda{
       margin-left: 10px;
       margin-right: 10px;
@@ -99,8 +112,6 @@
       
   }
   
-  
-  
   /* Estilos de cuerpo principal  */
   
   main{
@@ -121,7 +132,7 @@
   
   }
   main img {
-      width: 90%
+      width: 85%
   }
   
   main article .main-article {
@@ -136,13 +147,14 @@
       margin-bottom: 10px;    
   }
   main section article img {
-      margin: 15px;
+      margin: 10px;
   }
   
   main section .listado {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      margin: auto;
   }
   
   main section article i{
@@ -150,8 +162,8 @@
       font-size: 16px;
       color: #39b54a;
       padding: 5px;
-      width: 30px;
-      height: 30px;
+      width: 15px;
+      height: 20px;
       border: 1px solid #39b54a;
       background-color: #FFF;
       border-radius: 50%;
@@ -177,25 +189,28 @@
       width: 100%;
   }
   
-  /* Estilos de footer */
+  /* Footer */
   
   footer {
       padding: 15px;
   }
+
   footer section {
       padding: 15px;
       text-align: center;
   }
+
   footer section div {
       text-align: center;
       padding: 10px
   }
+
   footer section div i {
       color: blue;
   }
   
   
-  /* Adaptabilidad para tablet y compu */
+  /* Responsive Tablet y Compu */
   
   /* Tablet */
   @media (min-width: 361px){
@@ -205,34 +220,39 @@
   main section article {
       box-shadow : 0px 0px 10px black;
   }
+  
   header nav{
       display:block;
       display:flex;
       font-size: 8px;
   }
+  
   header .hamburguer-button{
       display:none;
   }
+
   main section article {
       width: 40%;
       margin-left: 10px;
       margin-right: 10px;
       margin-top:20px;   
   }
+
   header .items_menu_tienda{
       margin-left: 5px;
-      margin-right: 3px;
+      margin-right: 15px;
   }
+
   header .logo {
-      width: 30vw;
+      width: 20vw;
   }
   
   header .logoybarra {
       display:flex;
       flex-wrap: unset;
       justify-content:left;
-      
   }
+
   header .form .input{
       width: 30vw;
       font-size: 8px;
@@ -266,6 +286,7 @@
           width: 30vw;
           font-size: 12px;
       }
+      
       header .items_menu_tienda{
           font-size: 12px;
       }
@@ -276,7 +297,6 @@
           display:flex;
           justify-content: space-evenly;
       }      
-      
       
   }
   
