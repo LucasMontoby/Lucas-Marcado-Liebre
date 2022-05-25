@@ -112,7 +112,7 @@
       
   }
   
-  /* Estilos de cuerpo principal  */
+  /* Estilos de cuerpo principal Home */
   
   main{
       width: 90%;
@@ -134,18 +134,41 @@
   main img {
       width: 85%
   }
-  
+
+  /* Primer punto del último desafío*/
+  main section article:hover .descripcion{
+    opacity: 100%;
+    transition: 2000ms;
+}
+
+.descripcion {display:block;
+    opacity:0%;}
+/* ---------------------------- */
+
+ /* Segundo punto del último desafío */
+ main section article:hover {
+    box-shadow : 0px 0px 10px blueviolet;
+    transition: 300ms;
+}
+/* ---------------- */
+
   main article .main-article {
       padding: 10px;
-      border-top: 1px solid #eaeaea;
+      border-top: 1px solid #e7d26b;
       display: flex;
       flex-wrap: wrap;
   }
   
   main section article {
       background-color: #fff;
-      margin-bottom: 10px;    
+      margin-bottom: 10px;
+      transition: all;
   }
+
+  main section article :hover {
+    color:#eac926;
+}
+
   main section article img {
       margin: 10px;
   }
@@ -157,6 +180,7 @@
       margin: auto;
   }
   
+  /* último desafío */
   main section article i{
       display: block;
       font-size: 16px;
@@ -169,6 +193,15 @@
       border-radius: 50%;
       right: 30px;
       top : 10 px;
+      }
+
+  .fas{
+    transform: rotate;
+    transition: 1000ms;
+  }
+
+  .fas:hover {
+    transform: rotate(-90deg);
   }
   
   .descuento{
@@ -181,8 +214,11 @@
       font-size: 18px;
       flex-grow: 0.3;
       padding-left:10px;
+      transition:all;
   }
+  /* -------------------------*/
   
+
   .descripcion{
       font-size: 16px;
       display:none;
@@ -209,6 +245,13 @@
       color: blue;
   }
   
+  .fa-solid {
+      transition: all, 300ms;
+  }
+
+  .fa-solid:hover{
+      color:#ea899a;
+  }
   
   /* Responsive Tablet y Compu */
   
@@ -300,7 +343,7 @@
       
   }
   
-  /* Registro */
+  /* Registro y Login*/
   
   .logoregister {
       width: 150px;
@@ -334,7 +377,8 @@
       display:flex;
       flex-direction: column;
       text-align: center;
-      margin: 40px;;
+      margin: 40px;
+
   }
   
   body div {
@@ -370,6 +414,15 @@
   
   .ingresodato{
       margin-bottom: 3%;
+  }
+
+  .botonenviar{
+      transition: all;
+  }
+
+  .botonenviar :hover{
+    background-color: #0022AA;
+    transition: 1000ms;
   }
   
   .fotodeusuario{
